@@ -6,8 +6,6 @@ import UpdateEmployeeValidator from 'App/Validators/UpdateEmployeeValidator'
 export default class EmployeesController {
   public async index({}: HttpContextContract) {
     return Employee.all()
-    // const page = request.input('page', 1)
-    // return Employee.query().orderBy('last_name', 'asc').paginate(page, 10)
   }
 
   public async store({ request }: HttpContextContract) {
